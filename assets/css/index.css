@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -144,11 +144,46 @@ a{
         background-repeat: no-repeat;
         background-size: cover;  
     }
+    .withdrawalbody{
+        background-color: rgb(184,169,252);
+        /* background: linear-gradient(to bottom, rgb(184,169,252)90% , rgb(247,247,254)10%); */
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+    }
+    .fa-square-rss{
+        scale: 3.5;
+        color: black;
+        align-self: center;
+    }
+    div.withdrawal{
+        display: flex;
+        flex-direction: column;
+    }
+    div.withdrawal h2{
+        scale: 0.85;
+        color:rgb(75,32,239);
+        font-weight: 650;
+        margin-top: 0px;
+        text-wrap: wrap;
+    }
+    div.withdrawallogos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    div.withdrawallogos img:nth-of-type(2){
+        border-radius: 50%;
+    }
     div.enablewithdrawal h2{
         scale: 0.9;
         color:rgb(75,32,239);
         font-weight: 650;
     }
+
     .downloadenable{
         color: rgb(13,10,50);
     }
@@ -160,8 +195,35 @@ a{
         text-align: justify;
         text-wrap: wrap;
     }
+    .withdrawalpara{
+        font-size: 1.2rem;
+        text-align: justify;
+        text-wrap: wrap;
+        padding: 0px 35px;
+        margin-top: 20px;
+    }
+    .withdrawalform{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cashapptag{
+        display: flex;
+        flex-direction: column;
+    }
+    .Amount{
+        display: flex;
+        flex-direction: column;
+    }
     .cashapp{
         font-weight: 650;
+        color: rgb(75,32,239);
+    }
+    .formwithdrawalpara{
+        font-size: 13px;
+    }
+    .limit{
+        font-weight: 600;
         color: rgb(75,32,239);
     }
     form{
@@ -184,7 +246,7 @@ a{
         flex-direction: column;
     }   
     form > button{
-        margin-top: 15px;
+        margin-top: 30px;
         color: white;
         background-color:rgb(75,32,239);
         box-shadow: 2px 2px 15px rgba(243, 241, 241, 0.785);
@@ -213,6 +275,101 @@ a{
     .footerhrenable{
         margin-top: 20px;
     }
+    div.stages{
+        display: flex;
+        flex-direction: column;
+    }
+    div.checks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    div.linesincheck{
+        background-color: green;
+        width: 90px;
+        height: 2px;
+        align-self: center;
+    }
+    div.infocheck{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    div.infocheck P{
+        font-size: 15px;
+        text-align: center;
+    }
+    div.success{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.withdrawalsummary{
+        padding-top: 50px;
+    }
+   .fa-circle-check{
+    color: green;
+   }
+   .verificationcheck{
+    color: black;
+   }
+   .stagespara{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+   .successfulcheck{
+    font-size: 4rem;
+   }
+   .withdrawalsuccessful{
+    font-size: 1.5rem;
+    font-weight: 900;
+   }
+   .transactiondetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+   }
+   div.transactiondetails div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
 
+   .withdrawalfooternote{
+    margin-top: 20px;
+    padding: 0px 15px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.728);
+    font-weight: 640;
+   }
+   .transactionh2{
+    text-align: center;
+    font-size: 1.6rem;
+   }
+   .hrwithdraw{
+    margin-top: 30px;
+   }
+   div.home{
+    display: inline-block;
+    background-color: rgb(39, 34, 99);
+    padding: 10px;
+    margin-left: 70%;
+   }
+   div.home a{
+    color: white;
+    text-decoration: none;
+   }
+   
+   .home:active{
+    background-color: black;
+    text-decoration: none;
+   }
    
 }
