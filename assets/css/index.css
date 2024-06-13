@@ -21,7 +21,6 @@ a{
         font-family: Noto Sans;
     }
     div.fdiv{
-        margin-top: 20px;
         padding: 10px 20px;
     }
     div.fdiv h3{
@@ -29,7 +28,8 @@ a{
         font-weight: bold;
     }
     div.fdiv h2{
-        font-size: 50px;
+        margin-top: 5px;
+        font-size: 30px;
         font-weight: bold;
     }
     div.sdiv{
@@ -48,6 +48,7 @@ a{
         border: 2px;
         border-radius: 25px;
         font-weight: bold;
+        box-shadow: 2px 2px 10px rgb(193, 192, 203);
     }
     div.tdiv{
         margin-top: 20px;
@@ -62,6 +63,7 @@ a{
         color: black;
         margin-top: 30px;
         font-family: Noto Sans;
+        margin-top: 5%;
     }
     div.content1{
         padding: 20px;
@@ -76,18 +78,21 @@ a{
         color: rgb(77, 74, 74);
         margin-left: 20px;
         margin-bottom: 10px;
-        
+        margin-top: 10px;
+    }
+    div.enable{
+        width: fit-content;
+        margin: 20px auto;
     }
     #enable{
         background-color: rgb(121, 239, 189);
-        color: black;
+        color: rgb(47, 45, 45);
         font-size: 15px;
-        padding: 15px 20px;
+        padding: 20px 30px;
         border: 1px;
-        border-radius: 25px;
+        border-radius: 40px;
         font-weight: bold;
-        margin-left: 10px;
-        box-shadow: 2px 2px 10px rgb(39, 34, 99);
+        box-shadow: 2px 2px 10px rgb(107, 95, 238);
     }
     div.content2{
         margin-top: 30px;
@@ -97,4 +102,86 @@ a{
         width: 100%;
         height: 300px;
     }
+    div.main{
+        width: 100%;
+        height: 550px;
+        background-color: rgb(74, 33, 239);
+        color: white;
+        margin-top: 10%;
+        font-family: Noto Sans;
+    }
+    div.main1{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #extension{
+        width: 100px;
+        margin-top: 20%;
+    }
+    div.main2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    div.main2 h2{
+        font-size: 40px;
+        text-align: center;
+        padding: 10px;
+        line-height: 1;
+    }
+    div.main2 p{
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+    div.main3{
+        width: fit-content;
+        margin: 40px auto;
+    }
+    #withdraw{
+        background-color: rgb(121, 239, 189);
+        color: rgb(44, 43, 43);
+        font-size: 20px;
+        padding: 20px 30px;
+        border: 1px;
+        border-radius: 40px;
+        font-weight: bold;
+        box-shadow: 2px 2px 10px rgb(193, 192, 203);
+    }
+    div.footer{
+        background-color: rgb(23, 17, 73);
+        font-family: Noto Sans;
+        padding: 20px;
+        position: relative;
+    }
+    div.footer h2{
+        font-size: 15px;
+        color: white;
+        line-height: 2;
+        font-weight: bold;
+    }
+    div.footer p{
+        font-size: 12px;
+        color: rgb(228, 222, 222);
+        line-height: 2;
+        font-weight: bold;
+    }
+    div.about{
+        position: absolute;
+        right: 0;
+        top: 0;
+        translate: -70% 15%;
+    }
+    div.legal{
+        position: absolute;
+        right: 0;
+        top: 45%;
+        translate: -50%;
+    }
+    span{
+        color: rgb(195, 188, 188);
+    }
+    #copy{
+        margin-top: 20px;
+    }
+    
 }
