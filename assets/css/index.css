@@ -139,13 +139,11 @@ a{
         }
     .enablebody{
         background-color: rgb(184,169,252);
-        /* background: linear-gradient(to bottom, rgb(184,169,252)90% , rgb(247,247,254)10%); */
         background-repeat: no-repeat;
         background-size: cover;  
     }
     .withdrawalbody{
         background-color: rgb(184,169,252);
-        /* background: linear-gradient(to bottom, rgb(184,169,252)90% , rgb(247,247,254)10%); */
         background-repeat: no-repeat;
         background-size: cover;  
 
