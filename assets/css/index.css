@@ -445,4 +445,7 @@ a{
    span{
     color: rgb(207, 197, 197);
    }
+   .enable-footer{
+    background-color:  rgb(184,169,252);
+   }
 }
