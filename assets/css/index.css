@@ -368,5 +368,83 @@ a{
     background-color: black;
     text-decoration: none;
    }
+   div.main{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(74, 33, 239);
+    color: white;
+    margin-top: 10%;
+    font-family: Noto Sans;
+   }
+   div.main1{
+    width: fit-content;
+    margin: 0 auto;
+   }
+   #extension{
+    width: 100px;
+    margin-top: 20%;
+   }
+   div.main2{
+    width: 100%;
+    margin-top: 20px;
+   }
+   div.main2 h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1;
+   }
+   div.main2 p{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+   }
+   div.main3{
+    width: fit-content;
+    margin: 40px auto;
+   }
+   #withdraw{
+    background-color: rgb(121, 239, 189);
+    color: rgb(44, 43, 43);
+    font-size: 20px;
+    padding: 20px 30px;
+    border: 1px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 2px 2px 15px rgb(193, 192, 203);
+   }
+   div.footer{
+    background-color: rgb(23, 17, 73);
+    font-family: Noto Sans;
+    padding: 20px;
+    position: relative;
+   }
+   div.footer h2{
+    font-size: 15px;
+    color: white;
+    line-height: 2;
+    font-weight: bold;
+   }
+   div.footer p{
+    font-size: 12px;
+    color: rgb(228, 222, 222);
+    line-height: 2;
+    font-weight: bold;
+   }
+   div.about{
+    position: absolute;
+    right: 0;
+    top: 0;
+    translate: -70% 15%;
+   }
+   div.legal{
+    position: absolute;
+    right: 0;
+    top: 45%;
+    translate: -50%;
+   }
+   span{
+    color: rgb(195, 188, 188);
+   }
    
 }
