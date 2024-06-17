@@ -96,14 +96,16 @@ a{
     }
     div.content h2{
         text-align: center;
+        text-transform: uppercase;
         font-size: 25px;
         color: rgb(59, 56, 56);
-        line-height: 2.5;
+        line-height: 1;
+        margin-bottom: 25px;
     }
     div.content ul{
         font-size: 12px;
         color: rgb(77, 74, 74);
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 10px;
         line-height: 2;
     }
@@ -215,6 +217,7 @@ a{
         scale: 0.85;
         color:rgb(75,32,239);
         font-weight: 650;
+        text-align: center;
         margin-top: 0px;
         text-wrap: wrap;
     }
@@ -248,8 +251,9 @@ a{
     }
     .withdrawalpara{
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left;
         text-wrap: wrap;
+        font-weight: 600;
         padding: 0px 35px;
         margin-top: 20px;
     }
@@ -342,7 +346,7 @@ a{
     }
     div.linesincheck{
         background-color: green;
-        width: 90px;
+        width: 140px;
         height: 2px;
         align-self: center;
     }
@@ -403,7 +407,7 @@ a{
    .withdrawalfooternote{
     margin-top: 60px;
     padding: 0px 15px;
-    text-align: justify;
+    text-align: center;
     color: rgba(0, 0, 0, 0.728);
     font-weight: 640;
    }
@@ -481,25 +485,37 @@ a{
    .enableheading{
     padding: 0px 35px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 800;
     font-display: uppercase;
     text-transform: uppercase;
     color: rgb(23, 17, 73);
    }
    .enablesummary i{
-    scale: 3;
+    scale: 2.5;
     color: rgb(75,32,239);
    }
    .enablesummarypara{
     padding: 0px 35px;
-    font-size: 1.3rem;
-    text-align: justify;
-    margin-top: 50px;
-    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
    }
    .home2{
-    margin-left: 140px;
-    margin-bottom: 20px;
+    color: white;
+    background-color:rgb(75,32,239);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.861);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 80%;
+    margin-top: 4vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
    }
+
+
 }
