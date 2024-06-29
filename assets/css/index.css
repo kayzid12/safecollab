@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html,body{
     width: 100%;
@@ -15,9 +16,15 @@ a{
 }
 @media all and (max-width:575px){
     nav.safemobilenav{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         background-color: rgb(39, 34, 99);
         padding: 22px;
     }
@@ -25,20 +32,26 @@ a{
         margin-left: auto;
         color: white;
         scale: 1.5;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
     nav.safemobilenav a:nth-of-type(3){
         color: white;
         margin-left: 20px;
         scale: 1.5;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
 
     }
     nav.safemobilenav a:nth-of-type(4){
         color: white;
         margin-left: 20px;
         scale: 1.5;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
     div.landingpage{
         margin-top: 0px;
@@ -75,7 +88,8 @@ a{
         border: 2px;
         border-radius: 25px;
         font-weight: bold;
-        box-shadow: 2px 2px 15px rgb(193, 192, 203);
+        -webkit-box-shadow: 2px 2px 15px rgb(193, 192, 203);
+                box-shadow: 2px 2px 15px rgb(193, 192, 203);
     }
     div.tdiv{
         margin-top: 20px;
@@ -110,6 +124,8 @@ a{
         line-height: 2;
     }
     div.enable{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin: 20px auto;
     }
@@ -118,10 +134,11 @@ a{
         color: black;
         font-size: 15px;
         padding: 20px 30px;
-        border: 1px;
+        border: 2px;
         border-radius: 40px;
         font-weight: bold;
-        box-shadow: 2px 2px 15px rgb(39, 34, 99);
+        -webkit-box-shadow: 1px 2px 15px rgb(39, 34, 99);
+                box-shadow: 1px 2px 15px rgb(39, 34, 99);
         text-align: center;
     }
     div.content2{
@@ -141,8 +158,24 @@ a{
         font-family: Noto Sans;
        }
        div.main1{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin: 0 auto;
+        animation-name: extend;
+        animation-duration: 1.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+       }
+       @keyframes extend{
+        from{
+            position: relative;
+            top: 0;
+        }
+        to{
+            position: relative;
+            top: 5%;
+        }
        }
        #extension{
         width: 100px;
@@ -164,6 +197,8 @@ a{
         padding: 10px;
        }
        div.main3{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin: 40px auto;
        }
@@ -172,22 +207,32 @@ a{
         color: rgb(44, 43, 43);
         font-size: 15px;
         padding: 20px 30px;
-        border: 1px;
+        border: 2px;
         border-radius: 40px;
         font-weight: bold;
-        box-shadow: 2px 2px 15px rgb(193, 192, 203);
+        -webkit-box-shadow: 2px 2px 15px rgb(193, 192, 203);
+                box-shadow: 2px 2px 15px rgb(193, 192, 203);
        }
     .fa-bitcoin{
         color: rgb(75,32,239);
         scale: 2;
         margin-left: 20px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         margin-top: 15px;
     }
     div.enablewithdrawal{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         margin-top: 0px;
         }
     .enablebody{
@@ -207,11 +252,18 @@ a{
     .fa-square-rss{
         scale: 3.5;
         color: black;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
     div.withdrawal{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     div.withdrawal h2{
         scale: 0.85;
@@ -222,10 +274,18 @@ a{
         text-wrap: wrap;
     }
     div.withdrawallogos{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-left: 35px;
         margin-right: 35px;
     }
@@ -258,18 +318,34 @@ a{
         margin-top: 20px;
     }
     .withdrawalform{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         font-family: Noto Sans;
     }
     .cashapptag{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .Amount{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .cashapp{
         font-weight: 650;
@@ -284,38 +360,59 @@ a{
         color: rgb(75,32,239);
     }
     form{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         margin-top: 20px;
         padding: 10px 30px ;
 
     }
     form > *{
-        flex: 1 1 50%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
     }
     form > div.info:nth-of-type(3){
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
 
     }
     form .info{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }   
     form > button{
         margin-top: 30px;
         color: white;
         background-color:rgb(75,32,239);
-        box-shadow: 2px 2px 15px rgba(243, 241, 241, 0.785);
+        -webkit-box-shadow: 2px 2px 15px rgba(243, 241, 241, 0.785);
+                box-shadow: 2px 2px 15px rgba(243, 241, 241, 0.785);
     }
     form > button:hover{
         background-color:rgba(73, 32, 239, 0.674);
     
     }
     div.enablenotes{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         padding: 0px 35px;
         padding-bottom: 20px;
     }
@@ -335,26 +432,48 @@ a{
         margin-top: 70px;
     }
     div.stages{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     div.checks{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     div.linesincheck{
         background-color: green;
         width: 140px;
         height: 2px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
     div.infocheck{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     div.infocheck P{
         font-size: 15px;
@@ -362,9 +481,16 @@ a{
         font-family: Noto Sans;
     }
     div.success{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     div.withdrawalsummary{
         padding-top: 50px;
@@ -392,16 +518,29 @@ a{
     font-weight: 900;
    }
    .transactiondetails{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 30px;
    }
    div.transactiondetails div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
    }
 
    .withdrawalfooternote{
@@ -424,9 +563,12 @@ a{
     left: 10px;
     background-color: rgb(184,169,252);
     padding: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
+    -webkit-box-shadow: 2px 2px 10px black;
+            box-shadow: 2px 2px 10px black;
    }
    div.home a{
     color: white;
@@ -476,9 +618,16 @@ a{
     background-color:  rgb(184,169,252);
    }
    .enablesummary{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 50px;
     padding-top: 70px;
    }
@@ -505,11 +654,19 @@ a{
    .home2{
     color: white;
     background-color:rgb(75,32,239);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.861);
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.861);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.861);
     padding: 10px 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 80%;
     margin-top: 4vh;
     margin-left: 10%;
